@@ -46,16 +46,6 @@ import ruiImg from '../assets/rui-id.JPEG';
       </a>
     </div>
   </section>
-
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <h2>Contact</h2>
-      <p>
-        Email me at
-        <a class="email" href="mailto:xr0527@gmail.com">xr0527@gmail.com</a>
-      </p>
-    </div>
-  </section>
 </Layout>
 
 <style>
@@ -74,8 +64,8 @@ import ruiImg from '../assets/rui-id.JPEG';
   .hero-img img {
     width: 100%;
     border-radius: 16px;
-    display: block;
-    object-fit: cover;
+    background: linear-gradient(90deg, #ffd644 0%, #00d4ff 50%, #ff4fa3 100%);
+    padding: 16px;
   }
 
   .work { margin-top: 48px; }
@@ -110,20 +100,4 @@ import ruiImg from '../assets/rui-id.JPEG';
   @media (max-width: 700px) {
     .work-grid { grid-template-columns: 1fr; }
   }
-
-  .contact {
-    margin-top: 56px;
-  }
-  .contact-inner {
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 20px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .contact h2 { margin: 0; font-size: 20px; }
-  .contact p { margin: 0; color: #4b5563; }
-  .contact .email { color: #111827; text-decoration: none; font-weight: 600; }
 </style>
