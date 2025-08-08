@@ -18,6 +18,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # For project pages: BASE_PATH=/<repo>
+      # For user/org pages (repo name <user>.github.io): BASE_PATH=/
+      BASE_PATH: ${{ github.repository_owner }}.github.io == github.event.repository.name && '/' || '/' + github.event.repository.name
     steps:
       - name: Checkout
         uses: actions/checkout@v4
