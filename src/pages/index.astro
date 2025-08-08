@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import heroImg from '../assets/background.svg';
+import ruiImg from '../assets/rui-id.JPEG';
 ---
 
 <Layout>
@@ -9,19 +9,18 @@ import heroImg from '../assets/background.svg';
       <div class="wave" aria-hidden="true">👋</div>
       <h1>Hello, I am Rui Xiao</h1>
       <p>
-        I am a Product Designer with 10+ years experience, focusing in User Interface and User
-        Experience. I am also a proud dog parent, and a board game enthusiast.
+        I am a Software Engineer with 12+ years experience, focusing on frontend devlopment with active contribution to the backend. I am also a proud mom, and an educational technology enthusiast.
       </p>
     </div>
     <div class="hero-img">
-      <img src={heroImg.src} alt="Portrait" />
+      <img src={ruiImg.src} alt="Rui Xiao portrait" />
     </div>
   </section>
 
   <section class="work" id="work">
     <div class="work-header">
       <h2>Selected Work</h2>
-      <a class="subtle" href="#">View Dribbble →</a>
+      <a class="subtle" href="#">View Personal Projects →</a>
     </div>
     <div class="work-grid">
       <a class="card" href="#">
@@ -65,8 +64,8 @@ import heroImg from '../assets/background.svg';
   .hero-img img {
     width: 100%;
     border-radius: 16px;
-    background: linear-gradient(90deg, #ffd644 0%, #00d4ff 50%, #ff4fa3 100%);
-    padding: 16px;
+    display: block;
+    object-fit: cover;
   }
 
   .work { margin-top: 48px; }
